@@ -1,32 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rimatos- <rimatos-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/25 14:22:35 by rimatos-          #+#    #+#             */
-/*   Updated: 2026/05/25 14:22:36 by rimatos-         ###   ########.fr       */
+/*   Created: 2026/05/25 18:01:54 by rimatos-          #+#    #+#             */
+/*   Updated: 2026/05/25 18:14:38 by rimatos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_toupper(int c)
-{
-	if (c >= 97 && c <= 122)
-		return (c - 32);
-	else
-		return (c);
-}
+#include "libft.h"
 
-/* #include <ctype.h>
-#include <stdio.h>
-int	main(void)
+char	*strchr(const char *s, int c)
 {
-	char c = 20;
-	//printf("%c", c);
-	//printf("\n");
-	printf("%c", toupper(c));
-	//printf("\n");
-	printf("%c", ft_toupper(c));
-	return (0);
-} */
+	int	i;
+
+	i = 0;
+	while (s[i])
+	{
+		if (s[i] == (char)c)
+			return ((char *)&s[i]);
+		i++;
+	}
+	if (s[i] == (char)c)
+		return ((char *)&s[i]);
+	return (NULL);
+}
