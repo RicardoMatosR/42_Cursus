@@ -1,44 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rimatos- <rimatos-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/25 18:16:28 by rimatos-          #+#    #+#             */
-/*   Updated: 2026/05/26 19:45:15 by rimatos-         ###   ########.fr       */
+/*   Created: 2026/05/27 17:25:44 by rimatos-          #+#    #+#             */
+/*   Updated: 2026/05/27 18:49:45 by rimatos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strncmp(const char s1[], const char s2[], size_t n)
+int atoi(const char *nptr)
 {
-	size_t	i;
+	int	i;
+	int	n;
+	int sign;
 
 	i = 0;
-	while ((s1[i] || s2[i]) && i < n)
+	n = 0;
+	sign = 1;
+	while (nptr[i])
 	{
-		if ((unsigned char)s1[i] != (unsigned char)s2[i])
-			return ((unsigned char)s1[i] - (unsigned char)s2[i]);
-		i++;
+		if (isspace(nptr[i]) != 0)
+			i++;
 	}
-	return (0);
+	if (nptr[i] == '+' || nptr[i] == '-')
+		if (nptr[i] == '-')
+			sign = sign * -1;
+		i++;
+	while (nptr[i])
+	{
+		/* code */
+	}
+	
+	return (n * sign);
 }
 
-/*#include <stdio.h>
-#include <string.h>
-
-int	main(void)
+int	isspace(char c)
 {
-	char	*str1;
-	char	*str2;
-
-	str1 = "AB";
-	str2 = "A";
-	printf("%d", ft_strncmp(str1, str2, 2));
-	printf("\n");
-	printf("%d", strncmp(str1, str2, 2));
-	printf("\n");
+	if (c == " " || c == "\f" || c == "\n" || c == "\r" || c == "\t" || c == "\v")
+		return (1);
 	return (0);
-}*/
+}
