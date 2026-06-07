@@ -1,18 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rimatos- <rimatos-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/21 17:54:33 by rimatos-          #+#    #+#             */
-/*   Updated: 2026/06/07 18:45:00 by rimatos-         ###   ########.fr       */
+/*   Created: 2026/06/05 20:02:31 by rimatos-          #+#    #+#             */
+/*   Updated: 2026/06/07 18:18:17 by rimatos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(int c)
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	return (ft_isalpha(c) || ft_isdigit(c));
+	unsigned int	i;
+
+	if (!s || !f)
+		return ;
+	i = 0;
+	while (s[i])
+	{
+		f(i, &s[i]);
+		i++;
+	}
 }
+
+/* void	ft_move_char(unsigned int n, char *c)
+{
+	*c = *c + n;
+}
+
+#include <stdio.h>
+int	main(void)
+{
+	char	string[] = "aaaa";
+
+	ft_striteri(string, ft_move_char);
+	printf("%s\n", string);
+
+	return (0);
+} */

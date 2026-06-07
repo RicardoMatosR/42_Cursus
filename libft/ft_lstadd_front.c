@@ -1,18 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rimatos- <rimatos-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/21 17:54:33 by rimatos-          #+#    #+#             */
-/*   Updated: 2026/06/07 18:45:00 by rimatos-         ###   ########.fr       */
+/*   Created: 2026/06/06 19:26:38 by rimatos-          #+#    #+#             */
+/*   Updated: 2026/06/07 18:14:21 by rimatos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(int c)
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	return (ft_isalpha(c) || ft_isdigit(c));
+	if (!lst || !new)
+		return ;
+	new->next = *lst;
+	*lst = new;
 }

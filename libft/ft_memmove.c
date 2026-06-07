@@ -3,14 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rimatos- <rimatos-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: rimatos- <rimatos-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/28 17:54:31 by rimatos-          #+#    #+#             */
-/*   Updated: 2026/05/28 18:33:43 by rimatos-         ###   ########.fr       */
+/*   Updated: 2026/06/03 17:53:18 by rimatos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 #include "libft.h"
 
@@ -42,7 +40,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	return (dest);
 }
 
-#include <stdio.h>
+/*#include <stdio.h>
 #include <string.h>
 
 int	main(void)
@@ -52,4 +50,4 @@ int	main(void)
 	memmove(str2, str1, 5);
 	printf("%s", str2);
 	return (0);
-}
+}*/

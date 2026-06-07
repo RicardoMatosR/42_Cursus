@@ -1,18 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rimatos- <rimatos-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/21 17:54:33 by rimatos-          #+#    #+#             */
-/*   Updated: 2026/06/07 18:45:00 by rimatos-         ###   ########.fr       */
+/*   Created: 2026/06/07 17:28:41 by rimatos-          #+#    #+#             */
+/*   Updated: 2026/06/07 18:18:28 by rimatos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(int c)
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	return (ft_isalpha(c) || ft_isdigit(c));
+	if (!lst || !f)
+		return ;
+	while (lst)
+	{
+		f(lst->content);
+		lst = lst->next;
+	}
 }

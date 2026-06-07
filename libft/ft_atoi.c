@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rimatos- <rimatos-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: rimatos- <rimatos-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/27 17:25:44 by rimatos-          #+#    #+#             */
-/*   Updated: 2026/05/28 14:58:34 by rimatos-         ###   ########.fr       */
+/*   Updated: 2026/06/03 17:52:52 by rimatos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,17 @@
 
 int	ft_isspace(char c)
 {
-	if (c == ' ' || c == '\f' || c == '\n' || c == '\r' || c == '\t' || c == '\v')
+	if (c == ' ' || c == '\f' || c == '\n' || c == '\r' || c == '\t'
+		|| c == '\v')
 		return (1);
 	return (0);
 }
 
-int ft_atoi(const char *nptr)
+int	ft_atoi(const char *nptr)
 {
 	int	i;
 	int	n;
-	int sign;
+	int	sign;
 
 	i = 0;
 	n = 0;
@@ -34,7 +35,7 @@ int ft_atoi(const char *nptr)
 	{
 		if (nptr[i] == '-')
 			sign = sign * -1;
-		i++;	
+		i++;
 	}
 	while (ft_isdigit(nptr[i]))
 	{
@@ -43,11 +44,12 @@ int ft_atoi(const char *nptr)
 	}
 	return (n * sign);
 }
-#include <stdio.h>
+
+/*#include <stdio.h>
 int	main(void)
 {
 	const char *str = "   -1213b13";
 	int	numero = ft_atoi(str);
 	printf("%d", numero);
 	return (0);
-}
+}*/
