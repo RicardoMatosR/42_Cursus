@@ -10,7 +10,7 @@
 
 | Proyecto | Lenguaje | Estado | Nota | Descripción |
 | :--- | :---: | :---: | :---: | :--- |
-| [Libft](./libft) | `C` | ⏳ En proceso | `-` | Recreación de funciones estándar de la librería de C. |
+| [Libft](./libft) | `C` | ✅ Completado | `-` | Recreación de funciones estándar de la librería de C. |
 | `ft_printf` | `C` | 🔒 Bloqueado | `-` | Recreación del comportamiento de la función printf. |
 | `get_next_line` | `C` | 🔒 Bloqueado | `-` | Función para leer una línea completa de un file descriptor. |
 
