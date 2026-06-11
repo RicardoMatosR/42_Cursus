@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rimatos- <rimatos-@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: rimatos- <rimatos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/03 20:46:53 by rimatos-          #+#    #+#             */
-/*   Updated: 2026/06/07 18:13:20 by rimatos-         ###   ########.fr       */
+/*   Updated: 2026/06/11 17:15:05 by rimatos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,11 @@ static int	ft_check_set(char c, char const *set)
 	}
 	return (0);
 }
+/*
+** Allocates and returns a copy of s1 with leading and trailing characters
+**  from set removed.
+** Returns NULL if allocation fails.
+*/
 
 char	*ft_strtrim(char const *s1, char const *set)
 {

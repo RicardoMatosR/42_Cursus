@@ -3,14 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rimatos- <rimatos-@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: rimatos- <rimatos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/05 20:17:06 by rimatos-          #+#    #+#             */
-/*   Updated: 2026/06/07 18:14:47 by rimatos-         ###   ########.fr       */
+/*   Updated: 2026/06/11 17:14:45 by rimatos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+/*
+** Applies function f to each character of s to create a new string resulting 
+**	from successive applications.
+** Returns the new string or NULL if allocation fails.
+*/
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

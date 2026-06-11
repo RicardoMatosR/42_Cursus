@@ -3,14 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rimatos- <rimatos-@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: rimatos- <rimatos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 14:22:35 by rimatos-          #+#    #+#             */
-/*   Updated: 2026/06/07 18:46:02 by rimatos-         ###   ########.fr       */
+/*   Updated: 2026/06/11 17:15:13 by rimatos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+/*
+** Converts a lowercase ASCII character to uppercase.
+** Returns the converted character or the original if it is not lowercase.
+*/
 
 int	ft_toupper(int c)
 {

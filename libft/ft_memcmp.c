@@ -3,14 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rimatos- <rimatos-@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: rimatos- <rimatos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/01 16:59:16 by rimatos-          #+#    #+#             */
-/*   Updated: 2026/06/03 17:51:41 by rimatos-         ###   ########.fr       */
+/*   Updated: 2026/06/11 17:13:24 by rimatos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+/*
+** Compares the first n bytes of memory areas s1 and s2.
+** Returns an integer less than, equal to, or greater than zero if s1 is found
+**  to be less than, equal to, or greater than s2.
+*/
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

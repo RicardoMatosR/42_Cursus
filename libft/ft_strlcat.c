@@ -3,14 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rimatos- <rimatos-@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: rimatos- <rimatos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/02 16:15:09 by rimatos-          #+#    #+#             */
-/*   Updated: 2026/06/02 16:20:24 by rimatos-         ###   ########.fr       */
+/*   Updated: 2026/06/11 17:14:35 by rimatos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+/*
+** Appends src to string dst of size dstsize, guaranteeing null-termination if 
+**  dstsize > 0.
+** Returns the total length of the string it tried to create (initial dst
+**  length + src length).
+*/
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {

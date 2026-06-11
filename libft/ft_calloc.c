@@ -3,14 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rimatos- <rimatos-@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: rimatos- <rimatos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/02 16:27:51 by rimatos-          #+#    #+#             */
-/*   Updated: 2026/06/02 17:04:09 by rimatos-         ###   ########.fr       */
+/*   Updated: 2026/06/11 17:12:42 by rimatos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+/*
+** Allocates memory for count elements of size bytes and initializes all bytes
+**  to zero.
+** Returns a pointer to the allocated memory or NULL if allocation fails.
+*/
 
 void	*ft_calloc(size_t count, size_t size)
 {
@@ -20,8 +25,6 @@ void	*ft_calloc(size_t count, size_t size)
 	if (size != 0 && count > SIZE_MAX / size)
 		return (NULL);
 	total = count * size;
-	if (total == 0)
-		total = 1;
 	mem = malloc(total);
 	if (mem == NULL)
 		return (NULL);

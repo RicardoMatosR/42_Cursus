@@ -3,14 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rimatos- <rimatos-@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: rimatos- <rimatos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/06 18:54:18 by rimatos-          #+#    #+#             */
-/*   Updated: 2026/06/07 18:56:14 by rimatos-         ###   ########.fr       */
+/*   Updated: 2026/06/11 17:14:13 by rimatos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+/*
+** Writes the integer n to the file descriptor fd as a string of digits.
+*/
 
 void	ft_putnbr_fd(int n, int fd)
 {

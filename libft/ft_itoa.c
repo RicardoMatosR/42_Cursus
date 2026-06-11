@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rimatos- <rimatos-@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: rimatos- <rimatos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/05 20:38:25 by rimatos-          #+#    #+#             */
-/*   Updated: 2026/06/07 18:45:17 by rimatos-         ###   ########.fr       */
+/*   Updated: 2026/06/11 17:13:00 by rimatos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,10 @@ static int	get_int_len(long n)
 	}
 	return (len);
 }
+/*
+** Converts the integer n to a null-terminated string using malloc.
+** Returns the newly allocated string or NULL on allocation failure.
+*/
 
 char	*ft_itoa(int n)
 {

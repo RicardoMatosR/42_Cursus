@@ -2,18 +2,19 @@
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+        
-	+:+     */
-/*   By: rimatos- <rimatos-@student.42madrid.com    +#+  +:+      
-	+#+        */
-/*                                                +#+#+#+#+#+  
-	+#+           */
-/*   Created: 2026/05/25 14:22:27 by rimatos-          #+#    #+#             */
-/*   Updated: 2026/05/25 14:22:27 by rimatos-         ###   ########.fr       */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rimatos- <rimatos-@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/06/11 17:13:46 by rimatos-          #+#    #+#             */
+/*   Updated: 2026/06/11 17:13:51 by rimatos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+/*
+** Fills the first n bytes of the memory area s with the constant byte c.
+** Returns a pointer to s.
+*/
 
 void	*ft_memset(void *s, int c, size_t n)
 {

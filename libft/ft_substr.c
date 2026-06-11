@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rimatos- <rimatos-@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: rimatos- <rimatos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/03 18:12:34 by rimatos-          #+#    #+#             */
-/*   Updated: 2026/06/03 20:24:13 by rimatos-         ###   ########.fr       */
+/*   Updated: 2026/06/11 17:15:08 by rimatos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,11 @@
 
 /*if (10 (len) + 2 (start) > s_len(10)
 	len(8) = s_len(10) - start(2)*/
+/*
+** Extracts a substring from s starting at index start and of maximum size len.
+** Returns the new allocated substring or an empty string if start is beyond
+**  the end of s.
+*/
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*new_str;

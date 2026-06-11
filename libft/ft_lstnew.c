@@ -3,14 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rimatos- <rimatos-@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: rimatos- <rimatos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/06 19:20:36 by rimatos-          #+#    #+#             */
-/*   Updated: 2026/06/07 18:16:17 by rimatos-         ###   ########.fr       */
+/*   Updated: 2026/06/11 17:13:17 by rimatos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+/*
+** Creates a new list node with content and next set to NULL.
+** Returns the new node or NULL if allocation fails.
+*/
 
 t_list	*ft_lstnew(void *content)
 {
