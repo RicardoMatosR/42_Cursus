@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rimatos- <rimatos-@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: rimatos- <rimatos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/06 18:43:52 by rimatos-          #+#    #+#             */
-/*   Updated: 2026/06/07 18:27:34 by rimatos-         ###   ########.fr       */
+/*   Updated: 2026/06/11 17:14:18 by rimatos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,6 +83,10 @@ static char	**fill_split(char **split, char const *s, char c)
 	split[j] = NULL;
 	return (split);
 }
+/*
+** Splits string s into an array of strings using c as delimiter.
+** Returns a NULL-terminated array of strings or NULL on allocation failure.
+*/
 
 char	**ft_split(char const *s, char c)
 {
@@ -100,31 +104,6 @@ char	**ft_split(char const *s, char c)
 
 /* #include <stdio.h>
 #include <stdlib.h>
-
-static void print_split(char **split)
-{
-	size_t	i;
-
-	i = 0;
-	while (split[i])
-	{
-		printf("[%s]", split[i]);
-		i++;
-	}
-}
-
-static void	free_result(char **split)
-{
-	size_t	i;
-
-	i = 0;
-	while (split[i])
-	{
-		free(split[i]);
-		i++;
-	}
-	free(split);
-}
 
 int	main(void)
 {

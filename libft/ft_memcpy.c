@@ -6,11 +6,16 @@
 /*   By: rimatos- <rimatos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/28 17:38:52 by rimatos-          #+#    #+#             */
-/*   Updated: 2026/05/28 17:50:32 by rimatos-         ###   ########.fr       */
+/*   Updated: 2026/06/11 17:13:26 by rimatos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+/*
+** Copies n bytes from memory area src to memory area dest.
+** The memory areas must not overlap.
+** Returns a pointer to dest.
+*/
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {

@@ -3,14 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rimatos- <rimatos-@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: rimatos- <rimatos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/03 20:27:01 by rimatos-          #+#    #+#             */
-/*   Updated: 2026/06/07 18:16:48 by rimatos-         ###   ########.fr       */
+/*   Updated: 2026/06/11 17:14:33 by rimatos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+/*
+** Allocates and returns a new string, which is the concatenation of s1 and s2.
+** Returns NULL if allocation fails.
+*/
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

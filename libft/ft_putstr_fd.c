@@ -3,14 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rimatos- <rimatos-@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: rimatos- <rimatos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/06 18:48:40 by rimatos-          #+#    #+#             */
-/*   Updated: 2026/06/07 18:58:01 by rimatos-         ###   ########.fr       */
+/*   Updated: 2026/06/11 17:18:28 by rimatos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+/*
+** Writes the string s to the file descriptor fd.
+*/
 
 void	ft_putstr_fd(char *s, int fd)
 {

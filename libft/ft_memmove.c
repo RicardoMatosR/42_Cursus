@@ -3,14 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rimatos- <rimatos-@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: rimatos- <rimatos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/28 17:54:31 by rimatos-          #+#    #+#             */
-/*   Updated: 2026/06/03 17:53:18 by rimatos-         ###   ########.fr       */
+/*   Updated: 2026/06/11 17:13:28 by rimatos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+/*
+** Copies n bytes from src to dest, handling overlapping memory regions safely.
+** Returns a pointer to dest.
+*/
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {

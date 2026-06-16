@@ -3,14 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rimatos- <rimatos-@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: rimatos- <rimatos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/06 19:26:38 by rimatos-          #+#    #+#             */
-/*   Updated: 2026/06/07 18:14:21 by rimatos-         ###   ########.fr       */
+/*   Updated: 2026/06/11 17:13:04 by rimatos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+/*
+** Adds the node new at the beginning of the list pointed to by lst.
+*/
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {

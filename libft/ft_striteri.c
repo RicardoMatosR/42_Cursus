@@ -3,14 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rimatos- <rimatos-@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: rimatos- <rimatos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/05 20:02:31 by rimatos-          #+#    #+#             */
-/*   Updated: 2026/06/07 18:18:17 by rimatos-         ###   ########.fr       */
+/*   Updated: 2026/06/11 17:14:30 by rimatos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+/*
+** Applies the function f to each character of the string s, passing the
+**  character index and address.
+*/
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {

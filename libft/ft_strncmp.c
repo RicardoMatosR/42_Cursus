@@ -3,14 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rimatos- <rimatos-@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: rimatos- <rimatos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 18:16:28 by rimatos-          #+#    #+#             */
-/*   Updated: 2026/05/26 19:45:15 by rimatos-         ###   ########.fr       */
+/*   Updated: 2026/06/11 17:14:48 by rimatos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+/*
+** Compares up to n characters of strings s1 and s2.
+** Returns an integer less than, equal to, or greater than zero.
+*/
 
 int	ft_strncmp(const char s1[], const char s2[], size_t n)
 {

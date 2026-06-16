@@ -3,22 +3,28 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rimatos- <rimatos-@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: rimatos- <rimatos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/27 17:25:44 by rimatos-          #+#    #+#             */
-/*   Updated: 2026/06/03 17:52:52 by rimatos-         ###   ########.fr       */
+/*   Updated: 2026/06/11 17:12:47 by rimatos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isspace(char c)
+static int	ft_isspace(char c)
 {
 	if (c == ' ' || c == '\f' || c == '\n' || c == '\r' || c == '\t'
 		|| c == '\v')
 		return (1);
 	return (0);
 }
+/*
+** Converts the initial portion of the string pointed to by nptr to int.
+** Skips leading whitespace, handles an optional + or - sign, and stops at the
+** first non-digit character.
+** Returns the converted integer value.
+*/
 
 int	ft_atoi(const char *nptr)
 {

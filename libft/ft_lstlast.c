@@ -3,14 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rimatos- <rimatos-@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: rimatos- <rimatos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/07 15:44:31 by rimatos-          #+#    #+#             */
-/*   Updated: 2026/06/07 18:15:05 by rimatos-         ###   ########.fr       */
+/*   Updated: 2026/06/11 17:13:13 by rimatos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+/*
+** Returns the last node of the list lst, or NULL if lst is empty.
+*/
 
 t_list	*ft_lstlast(t_list *lst)
 {

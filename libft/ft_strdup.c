@@ -3,14 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rimatos- <rimatos-@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: rimatos- <rimatos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/03 17:38:49 by rimatos-          #+#    #+#             */
-/*   Updated: 2026/06/03 17:52:13 by rimatos-         ###   ########.fr       */
+/*   Updated: 2026/06/11 17:14:26 by rimatos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+/*
+** Duplicates the string s1 by allocating sufficient memory and copying the
+**  contents.
+** Returns the new string or NULL if allocation fails.
+*/
 
 char	*ft_strdup(const char *s1)
 {
