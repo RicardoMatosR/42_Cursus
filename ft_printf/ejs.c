@@ -58,6 +58,38 @@ int main(void)
     return (0);
 }*/
 
+
+
+int	ft_putnbr_base(long long nbr, char *base)
+{
+	int		base_n;
+	char	c;
+	int		count;
+
+	base_n = ft_strlen(base);
+	count = 0;
+	if (nbr < 0)
+	{
+		nbr = -nbr;
+		write(1, "-", 1);
+		count += 1;
+	}
+	if (nbr >= base_n)
+		count += ft_putnbr_base(nbr / base_n, base);
+	else
+	{
+		c = base[nbr % base_n];
+		write(1, &c, 1);
+		count += 1;
+	}
+	return (count);
+}
+
+void ft_putchar_fd(char c, int fd)
+{
+    write(fd, &c, 1);
+}
+
 void ft_putstr(char *str)
 {
 	int	i;
@@ -85,6 +117,8 @@ void mi_mini_printf(char *texto, ...)
 				ft_putstr(va_arg(argumentos, char*));
 			else if (texto[i + 1] == 'c')
 				ft_putchar_fd(va_arg(argumentos, int), 1);
+			else if (texto[i + 1] == 'd' || texto[i + 1] == 'i')
+				ft_putnbr_base((long long)va_arg(argumentos, int), "0123456789");
 			i++;
 		}
 		else
@@ -96,6 +130,6 @@ void mi_mini_printf(char *texto, ...)
 
 int main(void)
 {
-    mi_mini_printf("Hola %s, tu inicial es la %c\n", "TitoRichar", 'T');
+    mi_mini_printf("Hola %s, tu inicial es la %c\n y tiene %d letras", "TitoRichar", 'T',);
     return (0);
 }
