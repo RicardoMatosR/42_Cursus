@@ -10,7 +10,7 @@
 
 | Proyecto | Lenguaje | Estado | Nota | Descripción |
 | :--- | :---: | :---: | :---: | :--- |
-| [Libft](./libft) | `C` | ✅ Completado | `-` | Recreación de funciones estándar de la librería de C. |
+| [Libft](./libft) | `C` | ✅ Completado | 100/100 | Recreación de funciones estándar de la librería de C. |
 | `ft_printf` | `C` | ⏳ En proceso | `-` | Recreación del comportamiento de la función printf. |
 | `get_next_line` | `C` | ⏳ En proceso | `-` | Función para leer una línea completa de un file descriptor. |
 | `push_swap`	| `C` |	🔒 Bloqueado |	`-` | Algoritmo de ordenación mediante dos pilas y un conjunto limitado de instrucciones. |
