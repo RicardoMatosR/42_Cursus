@@ -12,8 +12,8 @@
 | :--- | :---: | :---: | :---: | :--- |
 | [libft](./libft) | `C` | ✅ Completado | 100/100 | Recreación de funciones estándar de la librería de C. |
 | [ft_printf](./ft_printf) | `C` | ✅ Completado | 100/100 | Recreación del comportamiento de la función printf. |
-| `get_next_line` | `C` | ⏳ En proceso | `-` | Función para leer una línea completa de un file descriptor. |
-| `push_swap`	| `C` |	⏳ En proceso |	`-` | Algoritmo de ordenación mediante dos pilas y un conjunto limitado de instrucciones. |
+| `get_next_line` | `C` | ✅ Completado | `-` | Función para leer una línea completa de un file descriptor. |
+| `push_swap`	| `C` |	✅ Completado |	`-` | Algoritmo de ordenación mediante dos pilas y un conjunto limitado de instrucciones. |
 
 *Leyenda: ⏳ En proceso | ✅ Completado | 🔒 Bloqueado*
 
